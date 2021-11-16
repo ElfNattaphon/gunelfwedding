@@ -1,0 +1,257 @@
+﻿<!DOCTYPE html>
+
+<html lang="th">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>The Wedding of Darika and Nattaphon - Save Our Date</title>
+    <link rel="shortcut icon" href="img/wedding-couple.ico" />
+    <!-- update the version number as needed -->
+    <!--<script defer src="/__/firebase/8.2.1/firebase-app.js"></script>-->
+    <!-- include only the Firebase features as you need -->
+    <script defer src="/__/firebase/8.2.1/firebase-auth.js"></script>
+    <script defer src="/__/firebase/8.2.1/firebase-database.js"></script>
+    <script defer src="/__/firebase/8.2.1/firebase-firestore.js"></script>
+    <script defer src="/__/firebase/8.2.1/firebase-functions.js"></script>
+    <script defer src="/__/firebase/8.2.1/firebase-messaging.js"></script>
+    <script defer src="/__/firebase/8.2.1/firebase-storage.js"></script>
+    <script defer src="/__/firebase/8.2.1/firebase-analytics.js"></script>
+    <script defer src="/__/firebase/8.2.1/firebase-remote-config.js"></script>
+    <script defer src="/__/firebase/8.2.1/firebase-performance.js"></script>
+
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+
+    <script src="https://www.gstatic.com/firebasejs/8.2.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.2.1/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.2.1/firebase-firestore.js"></script>
+    <!--
+      initialize the SDK after all desired features are loaded, set useEmulator to false
+      to avoid connecting the SDK to running emulators.
+    -->
+    <script defer src="/__/firebase/init.js?useEmulator=true"></script>
+
+    <link rel="stylesheet" href="https://fontawesome.com/v4.7.0/assets/font-awesome/css/font-awesome.css">
+    <link rel="stylesheet" href="./style/bootstrap.min.css">
+    <link rel="stylesheet" href="./style/select2.min.css">
+    <link rel="stylesheet" href="./style/owl.carousel.min.css">
+    <link rel="stylesheet" href="./style/lightcase.css">
+
+    <link href="https://fonts.googleapis.com/css?family=Kanit:300,400|Work+Sans:300,400,700" rel="stylesheet">
+
+    <link rel="stylesheet" href="./style/style.min.css">
+
+    <link rel="stylesheet" href="https://cdn.linearicons.com/free/1.0.0/icon-font.min.css">
+    <link href="https://file.myfontastic.com/7vRKgqrN3iFEnLHuqYhYuL/icons.css" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.js"></script>
+    <style>
+        .spanClass_textLove {
+            color: rgb(238, 217, 221);
+        }
+
+        .Class_ColorBoxLike {
+            background-color: rgb(255, 255, 255);
+        }
+    </style>
+</head>
+
+<body data-spy="scroll" data-target="#navbar-nav-header" class="static-layout">
+    <section style="background-color: rgb(235, 222, 233);">
+
+        <div class="container">
+          
+            <div class="section-content">
+                <div style="text-align: center; ">
+                    <h1 style="font-weight: bold; font-size:4vw;">ขอบคุณที่ร่วมเป็นหนึ่งในความทรงจำของเรา</h1>
+                </div>
+                <div class="card container text-center">
+                    <h1 class="display-2 mt-4 mb-4">
+                        <img src="img/img4.png" width="500px">
+                    </h1>
+                </div>
+                <section id="gtco-who-we-are" class="bg-white">
+                    <div class="container">
+                        <div class="section-content">
+                            <div class="title-wrap mb-4">
+                                <h3 class="section-title"><b>Sanday </b><img
+                                        src="img/img5.png" width="120px"><b> at
+                                        07.09a.m.</b></h3>
+                                        <h3></h3>
+                                <p class="section-sub-title">ณ บ้านเลขที่ 1015/2 ซอยเพชรเกษม63 แขวงหลักสอง เขตบางแค กรุงเทพมหานคร 10160</p>
+                                <p class="section-sub-title">
+                                    มีความยินดีขอเรียนเชิญท่านเพื่อเป็นเกียรติ<br>เนื่องในงานพิธีมงคลสมรส</p>
+                            </div>
+                            <div class="row text-center mt-4">
+                                <div class="col-md-4 col-sm-6 ">
+                                    <img class="rounded-circle" src="https://bmwedding2020.com/assets/img/plan-01.png"
+                                        alt="Generic placeholder image" width="140" height="140">
+                                    <h5 class="mb-4">07.09 น.</h5>
+                                    <p>พระสงฆ์เจริญพระพุทธมนต์</p>
+                                </div>
+
+                                <div class="col-md-4 col-sm-6 ">
+                                    <img class="rounded-circle" src="https://bmwedding2020.com/assets/img/plan-02.png"
+                                        alt="Generic placeholder image" width="140" height="140">
+                                    <h5 class="mb-4">09.09 น.</h5>
+                                    <p>แห่ขันหมาก หลั่งน้ำพระพุทธมนต์</p>
+                                </div>
+
+                                <div class="col-md-4 col-sm-6 ">
+                                    <img class="rounded-circle" src="https://bmwedding2020.com/assets/img/plan-03.png"
+                                        alt="Generic placeholder image" width="140" height="140">
+                                    <h5 class="mb-4">10.09 น.</h5>
+                                    <p>ขอเชิญร่วมรับประทานอาหาร</p>
+                                </div>
+
+                            </div>
+
+                        </div>
+                    </div>
+                </section>
+                <div id="fb_login" style="text-align: center;">
+                    <div onlogin="facebook.checkLoginState();" class="fb-login-button" data-width="" data-size="large"
+                        data-button-type="login_with" data-layout="default" data-auto-logout-link="false"
+                        data-use-continue-as="true"></div>
+                    <!--<fb:login-button scope="public_profile,email" >
+                    </fb:login-button>-->
+                </div>
+
+                <div id="fb_logout" style="text-align: center; ">
+                    <a href="#" onclick="facebook.logout();">Logout</a>
+                </div>
+
+                <div class="row" id="profile">
+                    <div class="mb-4">
+                        <a href="javascript:void(0);" data-toggle="tooltip" data-placement="top" title=""
+                            data-original-title="James Anderson" class="d-inline-block">
+                            <img src="https://cdn.pixabay.com/photo/2018/05/08/18/25/facebook-3383596_960_720.png"
+                                class="rounded-circle avatar-xs" alt="friend" width="50px" height="50px">
+                        </a>
+                        <a href="javascript:void(0);" class="d-inline-block text-muted font-weight-bold ml-2">
+                            <h5 id="status" class="text-title"></h5>
+                        </a>
+
+                    </div>
+
+                    <div class="col-md-12 form-textarea">
+                        <textarea class="form-control" id="message" name="message" rows="6"
+                            placeholder="คำอวยพร"></textarea>
+                    </div>
+                    <div class="col-md-12 form-btn text-center">
+                        <button class="btn btn-outline-primary btn-lg section-title-wright " id="message_commit"
+                            type="submit" name="submit">ส่งคำอวยพร</button>
+                    </div>
+                </div>
+            </div>
+            <div class="card-columns" id="postList">
+
+            </div>
+        </div>
+
+    </section>
+    </div>
+    </div>
+
+    <script type="text/javascript" src="./style/jquery.js"></script>
+    <script src="./style/popper.min.js"></script>
+    <script src="./style/bootstrap.min.js"></script>
+    <script src="./style/select2.min.js "></script>
+    <script src="./style/owl.carousel.min.js"></script>
+    <script src="./style/isotope.min.js"></script>
+    <script src="./style/lightcase.js"></script>
+    <script src="./style/waypoint.min.js"></script>
+    <script src="./style/jquery.countTo.js"></script>
+    <script src="./style/app.min.js"></script>
+
+
+
+
+    <!--
+<div class="container">
+    <h1>Learn Firebase</h1>
+
+    <form id="addUser">
+        <input type="text" name="name" placeholder="Add name">
+        <input type="text" name="city" placeholder="Add city">  
+        <button >Add</button>
+    </form>
+
+    <ul id="userList">
+
+    </ul>
+</div>
+-->
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const loadEl = document.querySelector('#load');
+            // // 🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥
+            // // The Firebase SDK is initialized and available here!
+            //
+            // firebase.auth().onAuthStateChanged(user => { });
+            // firebase.database().ref('/path/to/ref').on('value', snapshot => { });
+            // firebase.firestore().doc('/foo/bar').get().then(() => { });
+            // firebase.functions().httpsCallable('yourFunction')().then(() => { });
+            // firebase.messaging().requestPermission().then(() => { });
+            // firebase.storage().ref('/path/to/ref').getDownloadURL().then(() => { });
+            // firebase.analytics(); // call to activate
+            // firebase.analytics().logEvent('tutorial_completed');
+            // firebase.performance(); // call to activate
+            //
+            // // 🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥
+
+            try {
+                let app = firebase.app();
+                let features = [
+                    'auth',
+                    'database',
+                    'firestore',
+                    'functions',
+                    'messaging',
+                    'storage',
+                    'analytics',
+                    'remoteConfig',
+                    'performance',
+                ].filter(feature => typeof app[feature] === 'function');
+                loadEl.textContent = `Firebase SDK loaded with ${features.join(', ')}`;
+            } catch (e) {
+                console.error(e);
+                loadEl.textContent = 'Error loading the Firebase SDK, check the console.';
+            }
+        });
+    </script>
+
+
+
+
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+https://firebase.google.com/docs/web/setup#available-libraries -->
+    <script src="https://www.gstatic.com/firebasejs/8.2.1/firebase-analytics.js"></script>
+
+    <script>
+        // Your web app's Firebase configuration
+        // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+        var firebaseConfig = {
+            apiKey: "AIzaSyA8mikDAPKmXzLuaohbUKd3iU950p1-XeA",
+            authDomain: "gunelfwedding.firebaseapp.com",
+            projectId: "gunelfwedding",
+            storageBucket: "gunelfwedding.appspot.com",
+            messagingSenderId: "481524849920",
+            appId: "1:481524849920:web:ebd5cd1b458ad737bb67e5",
+            measurementId: "G-29SRBW72RL"
+        };
+        // Initialize Firebase
+        firebase.initializeApp(firebaseConfig);
+        firebase.analytics();
+        const db = firebase.firestore();
+
+    </script>
+
+    <script src="js/index.js"></script>
+    <script type="text/javascript" src="js/lib/zepto.min.js"></script>
+    <script type="text/javascript" src="js/app.js"></script>
+    <script type="text/javascript" src="js/facebook.js"></script>
+
+</body>
+<p id="load" style="text-align: center; color: white;">Firebase SDK Loading&hellip;</p>
+
+</html>
